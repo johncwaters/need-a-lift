@@ -1,81 +1,225 @@
 ---
-import Layout from '../layouts/Layout.astro';
-import Card from '../components/Card.astro';
+import Layout from "../layouts/Layout.astro";
+import Faq from "../components/widgets/Faq.astro";
+import Footer from "../components/widgets/Footer.astro";
 ---
 
-<Layout title="Welcome to Astro.">
-	<main>
-		<h1>Welcome to <span class="text-gradient">Astro</span></h1>
-		<p class="instructions">
-			To get started, open the directory <code>src/pages</code> in your project.<br />
-			<strong>Code Challenge:</strong> Tweak the "Welcome to Astro" message above.
-		</p>
-		<ul role="list" class="link-card-grid">
-			<Card
-				href="https://docs.astro.build/"
-				title="Documentation"
-				body="Learn how Astro works and explore the official API docs."
-			/>
-			<Card
-				href="https://astro.build/integrations/"
-				title="Integrations"
-				body="Supercharge your project with new frameworks and libraries."
-			/>
-			<Card
-				href="https://astro.build/themes/"
-				title="Themes"
-				body="Explore a galaxy of community-built starter themes."
-			/>
-			<Card
-				href="https://astro.build/chat/"
-				title="Community"
-				body="Come say hi to our amazing Discord community. ❤️"
-			/>
-		</ul>
-	</main>
-</Layout>
+<Layout title="Need A Lift? - Missoula">
+  <main>
+    <div class="relative px-6 pt-14 lg:px-8">
+      <div
+        class="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80"
+        aria-hidden="true"
+      >
+        <div
+          class="relative left-[calc(50%-11rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 rotate-[30deg] bg-gradient-to-tr from-[#ff80b5] to-primary opacity-30 sm:left-[calc(50%-30rem)] sm:w-[72.1875rem]"
+          style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)"
+        >
+        </div>
+      </div>
+      <div class="mx-auto max-w-2xl py-32 sm:py-48 lg:py-56">
+        <div class="text-center">
+          <h1
+            class="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl"
+          >
+            Need A Lift? - Your 24/7 Local Ride
+          </h1>
+          <p class="mt-6 text-lg leading-8 text-gray-600">
+            Your Neighborhood’s Personal Transportation Solution. Steered by our
+            local Missoula expert, Anthony Gallo, we take pride in being an integral part
+            of our community.
+          </p>
+          <div class="mt-10 flex items-center justify-center gap-x-6">
+            <a href="sms:+14063173563" class="btn-primary btn">Book A Ride</a>
+          </div>
+        </div>
+      </div>
+      <div
+        class="absolute inset-x-0 top-[calc(100%-13rem)] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[calc(100%-30rem)]"
+        aria-hidden="true"
+      >
+        <div
+          class="relative left-[calc(50%+3rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 bg-gradient-to-tr from-neutral to-primary opacity-30 sm:left-[calc(50%+36rem)] sm:w-[72.1875rem]"
+          style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)"
+        >
+        </div>
+      </div>
+    </div>
 
-<style>
-	main {
-		margin: auto;
-		padding: 1.5rem;
-		max-width: 60ch;
-	}
-	h1 {
-		font-size: 3rem;
-		font-weight: 800;
-		margin: 0;
-	}
-	.text-gradient {
-		background-image: var(--accent-gradient);
-		-webkit-background-clip: text;
-		-webkit-text-fill-color: transparent;
-		background-size: 400%;
-		background-position: 0%;
-	}
-	.instructions {
-		line-height: 1.6;
-		margin: 1rem 0;
-		border: 1px solid rgba(var(--accent), 25%);
-		background-color: white;
-		padding: 1rem;
-		border-radius: 0.4rem;
-	}
-	.instructions code {
-		font-size: 0.875em;
-		font-weight: bold;
-		background: rgba(var(--accent), 12%);
-		color: rgb(var(--accent));
-		border-radius: 4px;
-		padding: 0.3em 0.45em;
-	}
-	.instructions strong {
-		color: rgb(var(--accent));
-	}
-	.link-card-grid {
-		display: grid;
-		grid-template-columns: repeat(auto-fit, minmax(24ch, 1fr));
-		gap: 1rem;
-		padding: 0;
-	}
-</style>
+    <!-- About -->
+    <div class="bg-white py-24 sm:py-32" id="about">
+      <div class="mx-auto max-w-7xl px-6 lg:px-8">
+        <div class="mx-auto max-w-2xl lg:text-center">
+          <h2 class="text-base font-semibold leading-7 text-primary">
+            Ride Anytime
+          </h2>
+          <p
+            class="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl"
+          >
+            Your 24/7 local transportation solution
+          </p>
+          <p class="mt-6 text-lg leading-8 text-gray-600">
+            We're your trusted partners, offering a seamless and reliable ride
+            experience throughout the Missoula Bitterroot Valley and beyond. Our
+            dedicated team ensures your travel needs are met at all hours, day
+            or night.
+          </p>
+        </div>
+        <div class="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-4xl">
+          <dl
+            class="grid max-w-xl grid-cols-1 gap-x-8 gap-y-10 lg:max-w-none lg:grid-cols-2 lg:gap-y-16"
+          >
+            <div class="relative pl-16">
+              <dt class="text-base font-semibold leading-7 text-gray-900">
+                <div
+                  class="absolute left-0 top-0 flex h-10 w-10 items-center justify-center rounded-lg bg-primary"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-6 w-6 text-white"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    aria-hidden="true"
+                    ><path
+                      d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"
+                    ></path></svg
+                  >
+                </div>
+                Text-to-Ride Service
+              </dt>
+              <dd class="mt-2 text-base leading-7 text-gray-600">
+                Scheduling your ride is as easy as sending a text. Simply shoot
+                us a message with your pick-up location and time, and we'll be
+                there when you need us. This convenience is just a text away!
+              </dd>
+            </div>
+            <div class="relative pl-16">
+              <dt class="text-base font-semibold leading-7 text-gray-900">
+                <div
+                  class="absolute left-0 top-0 flex h-10 w-10 items-center justify-center rounded-lg bg-primary"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-6 w-6 text-white"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    aria-hidden="true"
+                    ><path
+                      d="M12 22s-8-4.5-8-11.8A8 8 0 0 1 12 2a8 8 0 0 1 8 8.2c0 7.3-8 11.8-8 11.8z"
+                    ></path><circle cx="12" cy="10" r="3"></circle></svg
+                  >
+                </div>
+                Flight Tracking
+              </dt>
+              <dd class="mt-2 text-base leading-7 text-gray-600">
+                Never miss a flight or wait at the airport again! We track your
+                flight status in real-time, ensuring our drivers are always
+                synced with your arrival or departure times.
+              </dd>
+            </div>
+            <div class="relative pl-16">
+              <dt class="text-base font-semibold leading-7 text-gray-900">
+                <div
+                  class="absolute left-0 top-0 flex h-10 w-10 items-center justify-center rounded-lg bg-primary"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-6 w-6 text-white"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    aria-hidden="true"
+                    ><rect x="3" y="4" width="18" height="18" rx="2" ry="2"
+                    ></rect><line x1="16" y1="2" x2="16" y2="6"></line><line
+                      x1="8"
+                      y1="2"
+                      x2="8"
+                      y2="6"></line><line x1="3" y1="10" x2="21" y2="10"
+                    ></line></svg
+                  >
+                </div>
+                Flexible Scheduling
+              </dt>
+              <dd class="mt-2 text-base leading-7 text-gray-600">
+                Your plans may change, but our commitment doesn't! We offer
+                flexible scheduling to cater to your evolving needs. From
+                airport transfers, city tours, to a night out on the town, we’ve
+                got your travel needs covered.
+              </dd>
+            </div>
+            <div class="relative pl-16">
+              <dt class="text-base font-semibold leading-7 text-gray-900">
+                <div
+                  class="absolute left-0 top-0 flex h-10 w-10 items-center justify-center rounded-lg bg-primary"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-6 w-6 text-white"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    aria-hidden="true"
+                    ><path d="M17 2.1l4 4-4 4"></path><path
+                      d="M3 12.2v-2a4 4 0 0 1 4-4h12.8M7 21.9l-4-4 4-4"
+                    ></path><path d="M21 11.8v2a4 4 0 0 1-4 4H4.2"></path></svg
+                  >
+                </div>
+                Complete Ride Solutions
+              </dt>
+              <dd class="mt-2 text-base leading-7 text-gray-600">
+                We're more than just an airport transfer service. Whether you're
+                exploring the city or planning a night out, we provide
+                convenient and reliable transportation solutions to cover all
+                your travel needs throughout your stay.
+              </dd>
+            </div>
+          </dl>
+        </div>
+      </div>
+    </div>
+
+    <!-- FAQ -->
+    <div class="bg-white py-24 sm:py-32" id="faq">
+      <div class="mx-auto max-w-7xl px-6 lg:px-8">
+        <div class="mx-auto max-w-2xl pb-10 text-center">
+          <p
+            class="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl"
+          >
+            Frequently asked questions
+          </p>
+        </div>
+        <div class="mx-auto max-w-7xl lg:px-8">
+          <Faq />
+        </div>
+      </div>
+    </div>
+
+    <!-- Call to action -->
+    <div class="relative px-6 pt-14 lg:px-8">
+      <div class="mx-auto max-w-2xl py-32 sm:py-48 lg:py-56">
+        <div class="text-left">
+          <h1
+            class="text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl"
+          >
+            Need a Reliable Ride?
+          </h1>
+          <p class="mt-6 text-lg leading-8 text-gray-600">
+            Choose Need A Lift? for dependable, round-the-clock transport. Just
+            text us the date and time, flight number, and where you need to go.
+          </p>
+          <div class="mt-10 flex items-start justify-start gap-x-6">
+            <a href="sms:+14063173563" class="btn-primary btn">Book A Ride</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <Footer />
+  </main>
+</Layout>
